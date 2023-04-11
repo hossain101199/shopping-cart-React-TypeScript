@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import CartIcon from "../../assets/svgs/cartIcon";
+import CartIcon from "../../assets/svgs/CartIcon";
 
 const CartButton = () => {
   return (

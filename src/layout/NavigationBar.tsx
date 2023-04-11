@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import CartIcon from "../assets/svgs/cartIcon";
 import CartButton from "../components/atoms/CartButton";
 import { headerRoutes } from "../routes/headerRoutes";
 
