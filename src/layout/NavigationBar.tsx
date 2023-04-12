@@ -3,8 +3,11 @@ import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import CartButton from "../components/atoms/CartButton";
 import { headerRoutes } from "../routes/headerRoutes";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
 const NavigationBar = () => {
+  const { cartQuantity } = useShoppingCart();
+
   return (
     <Navbar sticky="top" className="bg-white shadow-sm mb-3">
       <Container>
@@ -17,7 +20,7 @@ const NavigationBar = () => {
             );
           })}
         </Nav>
-        <CartButton />
+        {cartQuantity > 0 && <CartButton />}
       </Container>
     </Navbar>
   );
