@@ -2,12 +2,12 @@ export const headerRoutes = [
   {
     id: 1,
     name: "Home",
-    path: "/",
+    path: "/home",
   },
   {
     id: 2,
     name: "Store",
-    path: "/store",
+    path: "/",
   },
   {
     id: 3,
